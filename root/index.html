@@ -9,8 +9,74 @@
 </head>
 
 <body>
+
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
     <main>
         <section class="main-container">
+            <aside class="search-container">
+                <h2 class="title-h2">Location Search</h2>
+
+                <form id="search-form">
+                    <input class="form-input" type="text" placeholder="Enter a city" required></input>
+                    <button class="search-btn">Search</button>
+                    <hr>
+                </form>
+            </aside>
+
+            <section class="weather-content">
+                <section class="location-container">
+                    <h2 class="title-h2">Adelaide</h2>
+                    <h4>Temp:</h4>
+                    <h4>Wind:</h4>
+                    <h4>Humidity:</h4>
+                </section>
+                
+                <hr>
+    
+                <section class="forecast-container">
+                    <h2>5-Day Forecast</h2>
+                    <section class="day-container">
+                        <section class="square-container">
+                            <h3 class="date">28/01/2024</h3>
+                            <hr>
+                            <h4>Temp: 28°c</h4>
+                            <h4>Wind: 20 km/h</h4>
+                            <h4>Humidity: 5%</h4>
+                        </section>
+                        <section class="square-container">
+                            <h3 class="date">29/01/2024</h3>
+                            <hr>
+                            <h4>Temp: 28°c</h4>
+                            <h4>Wind: 20 km/h</h4>
+                            <h4>Humidity: 5%</h4>
+                        </section>
+                        <section class="square-container">
+                            <h3 class="date">30/01/2024</h3>
+                            <hr>
+                            <h4>Temp: 28°c</h4>
+                            <h4>Wind: 20 km/h</h4>
+                            <h4>Humidity: 5%</h4>
+                        </section>
+                        <section class="square-container">
+                            <h3 class="date">31/01/2024</h3>
+                            <hr>
+                            <h4>Temp: 28°c</h4>
+                            <h4>Wind: 20 km/h</h4>
+                            <h4>Humidity: 5%</h4>
+                        </section>
+                        <section class="square-container">
+                            <h3 class="date">01/02/2024</h3>
+                            <hr>
+                            <h4>Temp: 28°c</h4>
+                            <h4>Wind: 20 km/h</h4>
+                            <h4>Humidity: 5%</h4>
+                        </section>
+                    </section>
+                </section>
+            </section>
         </section>
     </main>
     <script src="assets/js/script.js"></script>
