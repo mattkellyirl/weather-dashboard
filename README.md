@@ -9,7 +9,7 @@ To use this application, please visit the link below:
 https://mattkellyirl.github.io/weather-dashboard/
 
 ## Screenshot
-<img src="assets/images/screenshot.png">
+<img src="root/assets/images/screenshot.png>
 
 ## Credits
 Written by Matt Kelly / Submitted 29/01/2024
