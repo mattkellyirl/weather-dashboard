@@ -43,8 +43,15 @@ const displayWeather = (city) => {
   const tempData = city.main.temp;
   const windData = city.wind.speed;
   const humidityData = city.main.humidity;
+  const iconCode = city.weather[0].icon;
 
   title.textContent = `${city.name} - ${currentDate}`;
+  const weatherIcon = document.createElement("img");
+  weatherIcon.src = `http://openweathermap.org/img/wn/${iconCode}.png`;
+  weatherIcon.alt = "Weather Icon";
+  weatherIcon.classList.add("weather-icon");
+  title.appendChild(weatherIcon);
+
   temperature.textContent = `Temp: ${tempData}°C`;
   wind.textContent = `Wind: ${windData} km/h`;
   humidity.textContent = `Humidity: ${humidityData}%`;

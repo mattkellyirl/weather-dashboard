@@ -23,6 +23,11 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.weather-icon {
+  width: 30px;
+  margin-left: 10px;
+}
+
 hr {
   height: 1px;
   border: none;
@@ -43,6 +48,8 @@ hr {
 }
 
 .location-container {
+  display: flex;
+  flex-direction: column;
   width: 70vw;
   padding: 2%;
 }
