@@ -63,20 +63,22 @@ const fetchFiveDayForecast = async (city) => {
 
 // Display weather for chosen city
 const dailyWeather = (city) => {
-  const tempData = city.main.temp;
-  const windData = city.wind.speed;
-  const humidityData = city.main.humidity;
-  const iconCode = city.weather[0].icon;
-
   title.textContent = `${city.name} - ${currentDate}`;
+
+  const iconCode = city.weather[0].icon;
   const weatherIcon = document.createElement("img");
   weatherIcon.src = `http://openweathermap.org/img/wn/${iconCode}.png`;
   weatherIcon.alt = "Weather Icon";
   weatherIcon.classList.add("weather-icon");
   title.appendChild(weatherIcon);
 
+  const tempData = city.main.temp;
   temperature.textContent = `Temp: ${tempData}°C`;
+
+  const windData = city.wind.speed;
   wind.textContent = `Wind: ${windData} km/h`;
+
+  const humidityData = city.main.humidity;
   humidity.textContent = `Humidity: ${humidityData}%`;
 };
 
@@ -95,10 +97,8 @@ const fiveDayWeather = (cityData) => {
       humidity: forecast.main.humidity,
       icon: forecast.weather[0].icon,
     };
-
     dailyForecasts.push(weather);
   }
-
   dailyForecasts.forEach((forecast, index) => {
     const dayContainer = document.querySelector(`.day-${index + 1}`);
 
