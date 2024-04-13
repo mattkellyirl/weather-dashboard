@@ -105,6 +105,12 @@ const fiveDayWeather = (cityData) => {
     const dayTitle = dayContainer.querySelector(".day-title");
     dayTitle.textContent = forecast.date;
 
+    const weatherIcon = document.createElement("img");
+    weatherIcon.src = `http://openweathermap.org/img/wn/${forecast.icon}.png`;
+    weatherIcon.alt = "Weather Icon";
+    weatherIcon.classList.add("weather-icon");
+    dayTitle.appendChild(weatherIcon);
+
     const dayTemp = dayContainer.querySelector(".day-temp");
     dayTemp.textContent = `Temp: ${forecast.temp}°C`;
 
@@ -113,12 +119,6 @@ const fiveDayWeather = (cityData) => {
 
     const dayHumidity = dayContainer.querySelector(".day-humidity");
     dayHumidity.textContent = `Humidity: ${forecast.humidity}%`;
-
-    // Set icon
-    const iconElement = document.createElement("img");
-    iconElement.src = `http://openweathermap.org/img/wn/${forecast.icon}.png`;
-    iconElement.alt = "Weather Icon";
-    dayContainer.appendChild(iconElement);
   });
 };
 
