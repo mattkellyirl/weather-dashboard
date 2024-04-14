@@ -149,6 +149,4 @@ const fiveDayWeather = (cityData) => {
   });
 };
 
-const saveCity = () => {};
-
 init();
