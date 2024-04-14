@@ -17,7 +17,34 @@ form.addEventListener("submit", (e) => {
   const city = input.value.trim();
   fetchDailyWeatherForecast(city);
   fetchFiveDayForecast(city);
+
+  // Set chosen city to local storage
+  localStorage.clear();
+  localStorage.setItem("lastCity", city);
+  renderRecentCity();
 });
+
+// Display last city location from user
+const renderRecentCity = () => {
+  const searchContainer = document.querySelector(".search-container");
+
+  for (i = 0; i < localStorage.length; i++) {
+    const city = localStorage.getItem(localStorage.key(i));
+
+    const button = document.createElement("button");
+    button.classList.add("recent-btn");
+    button.textContent = city;
+    searchContainer.appendChild(button);
+
+    // Render recent city data when button clicked
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      fetchDailyWeatherForecast(city);
+      fetchFiveDayForecast(city);
+    });
+  }
+};
 
 // Fetch weather data from API for today
 const fetchDailyWeatherForecast = async (city) => {
@@ -121,5 +148,7 @@ const fiveDayWeather = (cityData) => {
     dayHumidity.textContent = `Humidity: ${forecast.humidity}%`;
   });
 };
+
+const saveCity = () => {};
 
 init();
