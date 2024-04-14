@@ -1,15 +1,55 @@
-# Weather Dashboard: Matt Kelly
+# Weather Dashboard
 
-Check the weather in your local area with this weather dashboard. Please note that this is not the finished application and only the front end UI exists. The application is not yet functional. This challenge will be re-submitted. I have dedicated recent study hours to working on our group project.
+![License](https://img.shields.io/badge/license-none-lightgrey.svg)
 
-## Link
+## Description
 
-To use this application, please visit the link below:
+Check your local weather forecast with this weather dashboard, powered by the Open Weather Map API.
 
-https://mattkellyirl.github.io/weather-dashboard/
+## Table of Contents
 
-## Screenshot
-<img src="assets/images/screenshot.png">
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-## Credits
-Written by Matt Kelly / Submitted 29/01/2024
+## Installation Instructions
+
+There are no installation instructions for this project.
+
+## Usage
+
+To view this weather dashboard, please visit the GitHub pages [link](https://mattkellyirl.github.io/weather-dashboard/).
+
+By default, the application will load the latest weather forecast for Adelaide, South Australia. To view weather forecasts for other locations (eg. Sydney, Melbourne, Perth etc), search for a country, state or suburb name in the search form.
+
+<img src ="assets/images/1.png"></img>
+
+Your recent searches will be saved in the location search container. If you would like to re-visit that location, click on the location and the application will reload the relevant weather forecast.
+
+<img src ="assets/images/2.png"></img>
+
+<img src ="assets/images/3.png"></img>
+
+## Contribution Guidelines
+
+This project was developed by Matt Kelly.
+
+## Tests
+
+There are no tests associated with this project.
+
+## License
+
+![License](https://img.shields.io/badge/license-none-lightgrey.svg)
+
+This project is not licensed. For more information regarding licences, please visit this link: https://opensource.org/license/
+
+## Questions
+
+Please feel free to contact me via my GitHub or email below for any questions associated with this application:  
+GitHub: [mattkellyirl](https://github.com/mattkellyirl)  
+Email: mattkellyvisual@gmail.com
